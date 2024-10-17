@@ -48,7 +48,7 @@ final public class CHIOTPFieldFour: CHIOTPField<CHIOTPFieldFourLabel> {
 
     //bottom border color
     @IBInspectable
-    public var borderColor: UIColor = .lightGray {
+    public var bottomBorderColor: UIColor = .lightGray {
         didSet { redraw() }
     }
 
@@ -64,7 +64,7 @@ final public class CHIOTPFieldFour: CHIOTPField<CHIOTPFieldFourLabel> {
             label.layer.backgroundColor = boxBackgroundColor.cgColor
             label.borderHeight = borderHeight
             label.cornerRadius = cornerRadius
-            label.borderColor = borderColor
+            label.borderColor = bottomBorderColor
         }
     }
 }
